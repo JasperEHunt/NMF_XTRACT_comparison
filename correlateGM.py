@@ -68,7 +68,7 @@ if int(n_components) != NMF_components.shape[0]:
     print("Warning: user-entered number of components does not match shape of the NMF GM components file. Are you sure your NMF file has " + str(n_components) + " components?")
 
 # Generate a matrix of correlations where each row is an NMF component and each column is an XTRACT atlas tract
-print("Calculating correlations for k = " +  + str(n_components) + " components...")
+print("Calculating correlations for k = " + str(n_components) + " components...")
 corrs = correlateGM(NMF_components,atlas_tracts)
 print("Done!")
 
